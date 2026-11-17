@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import AssistantChat from "./components/AssistantChat";
 
 const API = import.meta.env.VITE_API_URL;
 
@@ -275,6 +276,7 @@ const handleDeleteAll = async () => {
                 ))
 
             )}
+            <AssistantChat />
 
         </div>
 
